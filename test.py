@@ -37,12 +37,13 @@ async def get_films_titles():
             films_titles = films_titles + i['title']
         else:
             films_titles = films_titles + ', ' + i['title']
-    # print(films_titles)
+    print(films_titles)
     await session.close()
     return films_titles
-
-
+#
+#
 asyncio.run(get_films_titles())
-print(len(oki))
+# print(len(oki))
 
 # A New Hope, The Empire Strikes Back, Return of the Jedi, Revenge of the Sith
+
